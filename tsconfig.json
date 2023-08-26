@@ -17,5 +17,5 @@
     "jsx": "react-jsx",
     "allowUmdGlobalAccess": true
   },
-  "include": ["./src"]
+  "include": ["src"]
 }

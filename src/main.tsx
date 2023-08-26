@@ -1,13 +1,14 @@
 import React from 'react';
+import { RouterProvider } from 'react-router-dom';
 import { createRoot } from 'react-dom/client';
 
-import App from './app/App';
+import router from 'app/createRoutes';
 
 const container = document.getElementById('root');
 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 const root = createRoot(container!);
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
